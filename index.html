@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <!-- <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">-->
+ <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Noto+Sans:wght@100&display=swap" rel="stylesheet">
+
+
+<style>
+ .attribution { font-size: 11px; text-align: center;  clear: both; position: fixed;
+  bottom:0;}
+    .attribution a { color: hsl(228, 45%, 44%);}
+ 
+body {
+ font-family: 'Hanken Grotesk','Noto Sans', sans-serif;}
+  
+.container {
+  margin: auto;
+  width: 736px;
+  height: 512px;
+  transform: translate(0%,50%);
+  height: 512px;
+  border-radius: 29px; 
+  box-shadow: 7px 7px 29px 12px hsl(241, 81%, 54%, 7%);
+ }
+ 
+ .purple {
+   float: left;
+   width: 50%;
+   height: 512px;
+   border-radius: 29px;
+   background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+   text-align: center;
+ }
+ 
+ .white {
+   float: left;
+   width: 50%;
+   height: 512px;
+   background-color: #FFFFFF;
+   border-radius: 29px;
+   position: relative;
+  
+   
+}
+ /* Purple part*/
+.yourresult {
+  font-size: 23px;
+  color: hsl(241, 100%, 89%);
+  margin-top: 39px;
+  font-weight: 700;
+  word-spacing: 2px;
+  letter-spacing: 0px;
+}
+
+.circle {
+  background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  margin: auto;
+}
+
+.of {
+ font-size: 18px;
+ color: hsl(241, 100%, 80%);
+ margin: 0px;
+ padding-top: 0px;
+}
+  
+.sevensix {
+  margin-top: 36px;
+  padding-top: 74px;
+  line-height: 0.5;
+  font-size: 69px; 
+  font-weight: 800;
+  color: #FFFFFF; 
+}
+
+.greatyou{
+  margin: auto;
+  width: 255px;
+  height: 120px;   
+   }
+   
+.great {
+  font-size: 32px;
+  font-weight: 700;
+  color: #FFFFFF;  
+  margin-bottom: 0px;
+  margin-top: 28px;
+ }
+
+.youscored {
+  font-size: 18px;
+  color: hsl(241, 100%, 89%);
+  margin-top: 14px;
+}
+
+
+/*White part*/
+
+.contain {
+  position: absolute;
+  top: 0;
+  margin: 17px 40px;
+  width: 288px;
+  height: 422px;
+  z-index: 1;
+}
+
+.summary {
+  font-size: 23px;
+  color: hsl(224, 30%, 27%);
+  font-weight: 700;
+  margin-bottom: 28px;  
+  letter-spacing: 1px;
+  z-index: 1;
+}
+
+.reaction {
+  display: block;
+  width: 255px;
+  height: 21px;
+  border: 1px solid hsl(224, 30%, 27%, 7%);
+  border-radius: 14px;  
+  margin: 18px 0px;      
+  padding: 14px 16px 18px 16px;  
+  font-size: 18px;
+  color: hsl(0, 100%, 67%);   
+  position: relative;
+  z-index: 1;  
+}
+
+.onehundred {
+  color: hsl(231, 7%, 66%, 100%);
+  font-size: 18px;
+  font-weight: 700; 
+}
+
+.bluetext {
+  color: hsl(224, 30%, 27%);
+  font-size: 18px;
+  font-weight: 700;
+  margin-right: 3px;
+} 
+
+.icon {
+  display: inline;
+  margin: 2px 12px 0 0;
+}
+
+.continue {
+  display: block;
+  background-color: #444E69;
+  border-radius: 28px;
+  font-size: 18px;
+  text-align: center;
+  margin: auto;
+  margin-top: 42px;
+  width: 288px;  
+}
+
+.continue a:link, a:visited {
+ display: inline-block;
+ width: 254px;
+ height: 22px;  
+ border-radius: 28px;
+ padding: 17px;
+ font-size: 18px;
+ text-align: center;
+ text-decoration: none;
+ color: #FFFFFF; 
+}
+
+.continue a:hover, a:active {
+ text-decoration: none;
+ color: #FFFFFF;
+ background-image: linear-gradient(#6442FB, #382FEC);  
+}
+
+
+/* Media*/
+/* Media*/
+/* Media*/
+
+@media screen and (max-width: 736px) {
+ 
+.container {
+  margin: 0px;
+  width: 100%;
+  height: 809px;
+  border-radius: 0px;
+  box-shadow: none;
+  transform: none;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+ }
+
+ .purple {
+   width: 100%;
+   height: 356px;
+   border-radius: 0px 0px 29px 29px; 
+ }
+
+ .white {
+   width: 100%;
+   height: 809px;
+   border-radius: 0px;
+   position: absolute;
+   z-index: -1;
+}
+
+
+
+/* Media*/
+/* Purple part*/
+.yourresult {
+  font-size: 18px;
+  margin-top: 24px;              
+  font-weight: normal;
+  word-spacing: -1.5px;
+}
+
+.circle {
+  width: 140px;
+  height: 140px;
+ }
+
+.sevensix {
+  margin-top: 23px;
+  padding-top: 48px;
+  font-size: 56px;   
+}
+
+.of {
+ font-size: 15px;
+ line-height: 4.3;
+ }
+
+.great {
+  font-size: 24px;  
+  margin-top: 25px;
+ }
+
+.youscored {
+  font-size: 15px;
+  margin-top: 8px;
+  word-spacing: 2px;
+}
+
+  
+ 
+  /* Media*/
+  /*White part*/
+.contain {
+  margin: 363px 0vw 0px 8vw;
+  width: 100vw;
+ 
+}
+.summary {
+  font-size: 18px; 
+  margin-bottom: 24px;  
+  letter-spacing: 0px;
+}
+  
+.reaction {
+  width: 75%;
+  border-radius: 11px; 
+  padding: 13px 16px 19px 16px;    
+  font-size: 16px;
+  /*margin-left:;*/
+}
+
+.onehundred {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.8;
+}
+
+.bluetext {
+  font-size: 16px;
+ } 
+ 
+.continue {
+  margin: 25px 0px;
+  /*width: 315px;*/
+  width: 84vw;
+ }
+
+  </style>
+</head>
+
+
+<body>
+
+<div class="container">
+
+<!--Left purple side-->
+ <div class="purple">
+   <div>
+   <p class="yourresult">Your Result</p>
+   </div>
+  
+ <div class="circle"> 
+   <p class="sevensix">76<br><span class="of">of 100</span>    </p>
+ </div>
+
+ <div class="greatyou">
+  <p class="great">Great</p>
+  <p class="youscored">You scored higher than 65% of the people who have taken these tests.</p>
+ </div>
+</div>
+
+
+<!--Right white side-->
+<div class="white">
+
+<div class="contain">
+<p class="summary">Summary</p>
+
+
+<div class="reaction" style="background-color:#FFF7F6; color: hsl(0, 100%, 67%);"> 
+  <span><img class="icon" src="icon-reaction.svg" alt="" width="15px" height="18px"> Reaction</span>
+  <span style="float:right;"><span class="bluetext">80</span>
+  <span class="onehundred">/ 100</span></span>
+ </div>
+
+<div class="reaction" style="background-color:#FFFBF3; color: hsl(39, 100%, 56%);">   
+  <span><img class="icon" src="icon-memory.svg" alt="" width="18px" height="18px">Memory</span>
+  <span style="float:right;"><span class="bluetext">92 </span>
+  <span class="onehundred">/ 100</span></span>
+ </div>
+
+<div class="reaction" style="background-color:#F3FBFA; color: hsl(166, 100%, 37%);">   
+  <span><img class="icon" src="icon-verbal.svg" alt="" width="18px" height="18px">Verbal</span>
+  <span style="float:right;"><span class="bluetext">61</span> 
+  <span class="onehundred">/ 100</span></span>
+ </div>
+ 
+<div class="reaction" style="background-color:#F4F4FD; color: hsl(234, 85%, 45%);"> 
+  <span><img class="icon" src="icon-visual.svg" alt="" width="18px" height="18px">Visual</span>
+  <span style="float:right;"><span class="bluetext">72</span> 
+  <span class="onehundred">/ 100</span></span>
+ </div>
+
+
+  <div class="continue" >
+  <a href="default.asp" target="_blank">Continue</a>
+  </div>
+
+</div>
+</div>
+
+</div>
+
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Svitlana Suslenkova</a>.
+  </div>
+</body>
+</html>
