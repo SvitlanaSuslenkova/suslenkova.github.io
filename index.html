@@ -124,17 +124,29 @@ body {
   letter-spacing: 1px;
   z-index: 1;
 }
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+    padding: 1px;
+  border-radius: 14px;
+  background-image: url(border2.png);
+   background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: 18px 0px; 
 
+}
+ 
 .reaction {
   display: block;
+  
   width: 255px;
   height: 21px;
-  border: 1px solid hsl(224, 30%, 27%, 7%);
+  border: 0px solid hsl(224, 30%, 27%, 7%);
   border-radius: 14px;  
-  margin: 18px 0px;      
-  padding: 14px 16px 18px 16px;  
+    
+  padding: 14px 15px 18px 16px;  
   font-size: 18px;
-  color: hsl(0, 100%, 67%);   
+   
   position: relative;
   z-index: 1;  
 }
@@ -262,8 +274,10 @@ body {
   /* Media*/
   /*White part*/
 .contain {
-  margin: 363px 0vw 0px 8vw;
-  width: 100vw;
+   
+  margin-top: 363px;
+  margin-left: 8%;
+  width: 84%;
  
 }
 .summary {
@@ -273,12 +287,11 @@ body {
 }
   
 .reaction {
-  width: 75%;
-  border-radius: 11px; 
-  padding: 13px 16px 19px 16px;    
-  font-size: 16px;
-  /*margin-left:;*/
-}
+    box-sizing: border-box;
+  width: 100%;
+  padding: 13px 16px 19px 16px;
+  height: 51px;
+  }
 
 .onehundred {
   font-size: 16px;
@@ -293,8 +306,9 @@ body {
 .continue {
   margin: 25px 0px;
   /*width: 315px;*/
-  width: 84vw;
+  width: 100%;
  }
+}
 
   </style>
 </head>
@@ -327,31 +341,37 @@ body {
 <div class="contain">
 <p class="summary">Summary</p>
 
-
+<div class="grid-container" >
 <div class="reaction" style="background-color:#FFF7F6; color: hsl(0, 100%, 67%);"> 
   <span><img class="icon" src="icon-reaction.svg" alt="" width="15px" height="18px"> Reaction</span>
   <span style="float:right;"><span class="bluetext">80</span>
   <span class="onehundred">/ 100</span></span>
  </div>
+</div>
 
+<div class="grid-container" >
 <div class="reaction" style="background-color:#FFFBF3; color: hsl(39, 100%, 56%);">   
   <span><img class="icon" src="icon-memory.svg" alt="" width="18px" height="18px">Memory</span>
   <span style="float:right;"><span class="bluetext">92 </span>
   <span class="onehundred">/ 100</span></span>
  </div>
+</div>
 
+ <div class="grid-container" >
 <div class="reaction" style="background-color:#F3FBFA; color: hsl(166, 100%, 37%);">   
   <span><img class="icon" src="icon-verbal.svg" alt="" width="18px" height="18px">Verbal</span>
   <span style="float:right;"><span class="bluetext">61</span> 
   <span class="onehundred">/ 100</span></span>
  </div>
- 
+</div>
+
+ <div class="grid-container" >
 <div class="reaction" style="background-color:#F4F4FD; color: hsl(234, 85%, 45%);"> 
   <span><img class="icon" src="icon-visual.svg" alt="" width="18px" height="18px">Visual</span>
   <span style="float:right;"><span class="bluetext">72</span> 
   <span class="onehundred">/ 100</span></span>
  </div>
-
+</div>
 
   <div class="continue" >
   <a href="default.asp" target="_blank">Continue</a>
@@ -362,7 +382,7 @@ body {
 
 </div>
 
-  
+
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
